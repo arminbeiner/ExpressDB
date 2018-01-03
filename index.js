@@ -22,10 +22,20 @@ router.use(function(req, res, next){
     next()
 })
 
-router.route('/')
+router.route('/customers')
 
     .get(function (req, res){
         data.getCustomersfromDB(res)
+    })
+
+router.route('/policies')
+    .get(function (req, res){
+        data.getPoliciesfromDB(res)
+    })
+
+router.route('/customerswithpolicies')
+    .get(function (req, res){
+        data.getCustomerwithPoliciesfromDB(res)
     })
 
 app.use('/', router)
