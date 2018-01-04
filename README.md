@@ -1,4 +1,4 @@
-#Travis
+# Travis
 [![Build Status](https://travis-ci.org/arminbeiner/ExpressDB.svg?branch=master)](https://travis-ci.org/arminbeiner/ExpressDB)
 
 # ExpressDB
