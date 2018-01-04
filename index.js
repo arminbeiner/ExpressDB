@@ -2,6 +2,8 @@
  * Created by Armin on 06.12.2017.
  */
 
+'use strict'
+
 import express from 'express'
 import cors from 'cors'
 import bodyParser from 'body-parser'
@@ -14,7 +16,6 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const data = new DB()
-const pg = require('pg');
 
 let router = express.Router()
 
