@@ -3,8 +3,6 @@
  */
 'use strict'
 
-let pool = require('../db_config')
-
 let chai = require('chai');
 let chaiHttp = require('chai-http')
 let server = require('../index')
@@ -21,6 +19,32 @@ describe('/GET customers', () => {
                 res.body.should.be.a('array');
                 res.body.length.should.be.above(0);
             done();
+            })
+    })
+})
+
+describe('/GET policies', () => {
+    it('it should GET all the policies', (done) =>{
+        chai.request(server)
+            .get('/policies')
+            .end((err, res) => {
+                res.should.have.status(200);
+                res.body.should.be.a('array');
+                res.body.length.should.be.above(0);
+                done();
+            })
+    })
+})
+
+describe('/GET customerswithpolicies', () => {
+    it('it should GET all the customers with all their policies', (done) =>{
+        chai.request(server)
+            .get('/customerswithpolicies')
+            .end((err, res) => {
+                res.should.have.status(200);
+                res.body.should.be.a('array');
+                res.body.length.should.be.above(0);
+                done();
             })
     })
 })
