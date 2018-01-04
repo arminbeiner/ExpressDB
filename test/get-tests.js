@@ -1,6 +1,9 @@
 /**
  * Created by Armin on 03.01.2018.
  */
+
+/** Possible to use a Design Patter ?? **/
+
 'use strict'
 
 let chai = require('chai');
