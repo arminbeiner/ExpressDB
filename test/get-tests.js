@@ -16,6 +16,8 @@ describe('/GET customers', () => {
         chai.request(server)
             .get('/customers')
             .end((err, res) => {
+                should.exist(res);
+                should.not.exist(err);
                 res.should.have.status(200);
                 res.body.should.be.a('array');
                 res.should.be.json;
@@ -30,6 +32,8 @@ describe('/GET policies', () => {
         chai.request(server)
             .get('/policies')
             .end((err, res) => {
+                should.exist(res);
+                should.not.exist(err);
                 res.should.have.status(200);
                 res.body.should.be.a('array');
                 res.should.be.json;
@@ -44,6 +48,8 @@ describe('/GET customerswithpolicies', () => {
         chai.request(server)
             .get('/customerswithpolicies')
             .end((err, res) => {
+                should.exist(res);
+                should.not.exist(err);
                 res.should.have.status(200);
                 res.body.should.be.a('array');
                 res.should.be.json;

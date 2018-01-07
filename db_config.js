@@ -1,7 +1,3 @@
-/**
- * Created by Armin on 06.12.2017.
- */
-
 'use strict'
 
 let Pool = require('pg').Pool

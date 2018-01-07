@@ -7,7 +7,9 @@ let should =  chai.should()
 describe('Check first id of customers table', () => {
     it('should equal 1', (done) => {
         pool.query('SELECT * from customer', function (err, result) {
-            result.rows[0].id.should.equal(1)
+            should.not.exist(err);
+            should.exist(result);
+            result.rows[0].id.should.equal(1);
             done()
         })
     })
@@ -21,6 +23,17 @@ describe('Load all customers', () => {
             result.should.be.an('object');
             result.rows.length.should.be.above(0);
             done();
+        })
+    })
+})
+
+describe('Check first id of policies table', () => {
+    it('should equal 1', (done) => {
+        pool.query('SELECT * from policy', function(err, result) {
+            should.not.exist(err);
+            should.exist(result);
+            result.rows[0].id.should.equal(1);
+            done()
         })
     })
 })
