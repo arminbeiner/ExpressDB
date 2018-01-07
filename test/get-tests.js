@@ -2,8 +2,6 @@
  * Created by Armin on 03.01.2018.
  */
 
-/** Possible to use a Design Patter ?? **/
-
 'use strict'
 
 let chai = require('chai');
@@ -20,6 +18,7 @@ describe('/GET customers', () => {
             .end((err, res) => {
                 res.should.have.status(200);
                 res.body.should.be.a('array');
+                res.should.be.json;
                 res.body.length.should.be.above(0);
             done();
             })
@@ -33,6 +32,7 @@ describe('/GET policies', () => {
             .end((err, res) => {
                 res.should.have.status(200);
                 res.body.should.be.a('array');
+                res.should.be.json;
                 res.body.length.should.be.above(0);
                 done();
             })
@@ -46,6 +46,7 @@ describe('/GET customerswithpolicies', () => {
             .end((err, res) => {
                 res.should.have.status(200);
                 res.body.should.be.a('array');
+                res.should.be.json;
                 res.body.length.should.be.above(0);
                 done();
             })
