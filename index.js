@@ -16,6 +16,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const data = new DB()
+const log = require('simple-node-logger').createSimpleFileLogger('express.log')
 
 let router = express.Router()
 
@@ -27,21 +28,25 @@ router.route('/customers')
 
     .get(function (req, res){
         data.getCustomersfromDB(res)
+        log.info("All Customers have been requested")
     })
 
 router.route('/policies')
     .get(function (req, res){
         data.getPoliciesfromDB(res)
+        log.info("All Policies have been requested")
     })
 
 router.route('/customerswithpolicies')
     .get(function (req, res){
         data.getCustomerwithPoliciesfromDB(res)
+        log.info("All Customers with associated Polcies have been requested")
     })
 
 app.use('/', router)
 
 app.use(function(err, req, res, next){
+    log.error("Error while Request", err.stack, err.message)
     delete err.stack
     res.status(err.status || 500).json(err)
 })
