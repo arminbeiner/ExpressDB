@@ -6,6 +6,7 @@ const log = require('simple-node-logger').createSimpleFileLogger('database.log')
 
 export default class DB {
 
+    
     getCustomersfromDB(response) {
         pool.query('SELECT * from customer', function (err, result) {
             if(err) {
