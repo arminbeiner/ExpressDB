@@ -1,3 +1,5 @@
+import { selectAllCustomers, selectAllPolicies, selectCustomerWithPolicies } from './queries';
+
 'use strict'
 
 let pool = require('./db_config')
@@ -6,9 +8,8 @@ const log = require('simple-node-logger').createSimpleFileLogger('database.log')
 
 export default class DB {
 
-    
     getCustomersfromDB(response) {
-        pool.query('SELECT * from customer', function (err, result) {
+        pool.query(selectAllCustomers, function (err, result) {
             if(err) {
                 log.error('Error while getting customers',  err.stackTrace(), err.message)
             }
@@ -18,7 +19,7 @@ export default class DB {
     }
 
     getPoliciesfromDB(response) {
-        pool.query('SELECT * from policy', function (err, result){
+        pool.query(selectAllPolicies, function (err, result){
             if(err) {
                 log.error('Error while getting policies',  err.stackTrace(), err.message)
             }
@@ -28,7 +29,7 @@ export default class DB {
     }
 
     getCustomerwithPoliciesfromDB(response) {
-        pool.query('SELECT c.lastname, c.firstname, c.street, c.housenumber, c.postcode, c.town, c.country, c.language, p.policynumber, p.startdate, p.enddate, p.premium, p.currency FROM customer c JOIN policy p ON (c.id = p.customerid)', function (err, result) {
+        pool.query(selectCustomerWithPolicies, function (err, result) {
             if(err) {
                 log.error('Error while getting customers with policies',  err.stackTrace(), err.message)
             }
