@@ -4,7 +4,7 @@ import express from 'express'
 import cors from 'cors'
 import bodyParser from 'body-parser'
 
-import DB from './db'
+import DB from './app/db'
 
 let app = express()
 app.use(bodyParser.urlencoded({extended: true}))
@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.use(cors())
 
 const data = new DB()
-const log = require('simple-node-logger').createSimpleFileLogger('express.log')
+const log = require('simple-node-logger').createSimpleFileLogger('./app/log/express.log')
 
 let router = express.Router()
 
