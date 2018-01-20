@@ -5,7 +5,7 @@
   "scripts": {
     "build": "node_modules/.bin/babel-node --presets=es2015",
     "start": "nodemon --exec npm run build -- index.js",
-    "test": "node_modules/.bin/mocha --require babel-register test/*tests.js"
+    "test": "node_modules/.bin/mocha --require babel-register app-test/*tests.js"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
