@@ -11,10 +11,12 @@ export default class DB {
 	getCustomersfromDB(response) {
 		pool.query(selectAllCustomers, function (err, result) {
 			if(err) {
-				log.error('Error while getting customers',  err.stackTrace(), err.message)
+				log.error('Error while getting customers',  err.stack, err.message)
 			}
+			else {
 			response.json(result.rows)
 			log.info('Loaded customers from database')
+			}
 		})
 	}
 

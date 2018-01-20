@@ -22,9 +22,14 @@ router.use(function(req, res, next){
 
 router.route('/customers')
 
-	.get(function (req, res){
+	.get(function (req, res, err){
 		data.getCustomersfromDB(res)
-		log.info('All Customers have been requested')
+		if(err) {
+			log.error(err.message)
+		}
+		else {
+			log.info('All Customers have been requested')
+		}	
 	})
 
 router.route('/policies')
