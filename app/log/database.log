@@ -1,0 +1,96 @@
+17:16:15.911 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:17:51.491 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:18:48.350 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:19:26.288 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:19:40.997 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:20:09.761 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:20:55.803 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:22:16.588 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:22:23.752 ERROR Error while getting customers with policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:23:12.942 ERROR Error while getting customers with policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:23:35.872 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:24:18.518 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:25:26.051 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:25:42.156 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:26:30.917 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:27:58.222 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:28:05.318 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:28:25.148 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:29:11.938 ERROR Error while getting customersError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:29:21.046 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:35:18.332 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:35:40.154 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:35:49.705 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 
+17:36:14.419 ERROR Error while getting policiesError: connect ECONNREFUSED 127.0.0.1:5432
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1136:14)connect ECONNREFUSED 127.0.0.1:5432 

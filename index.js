@@ -29,6 +29,7 @@ router.route('/customers')
 		}
 		else {
 			log.info('All Customers have been requested')
+		
 		}	
 	})
 
@@ -49,7 +50,6 @@ app.use('/', router)
 app.use(function(err, req, res){
 	log.error('Error while Request', err.stack, err.message)
 	delete err.stack
-	res.status(err.status || 500).json(err)
 })
 
 app.listen(3000, function () {

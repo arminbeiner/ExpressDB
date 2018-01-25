@@ -1,4 +1,5 @@
 import { selectAllCustomers, selectAllPolicies, selectCustomerWithPolicies } from './queries'
+import { errorHandlingResponse } from './errorhandler'
 
 'use strict'
 
@@ -10,33 +11,20 @@ export default class DB {
 
 	getCustomersfromDB(response) {
 		pool.query(selectAllCustomers, function (err, result) {
-			if(err) {
-				log.error('Error while getting customers',  err.stack, err.message)
-			}
-			else {
-			response.json(result.rows)
-			log.info('Loaded customers from database')
-			}
+			errorHandlingResponse(response, result, err, log)
 		})
 	}
 
 	getPoliciesfromDB(response) {
 		pool.query(selectAllPolicies, function (err, result){
-			if(err) {
-				log.error('Error while getting policies',  err.stackTrace(), err.message)
-			}
-			response.json(result.rows)
-			log.info('Loaded policies from database')
+			errorHandlingResponse(response, result, err, log)
 		})
 	}
 
 	getCustomerwithPoliciesfromDB(response) {
 		pool.query(selectCustomerWithPolicies, function (err, result) {
-			if(err) {
-				log.error('Error while getting customers with policies',  err.stackTrace(), err.message)
-			}
-			response.json(result.rows)
-			log.info('Loaded customers with associated policies from database')
+			errorHandlingResponse(response, result, err, log)
 		})
 	}
+
 }
