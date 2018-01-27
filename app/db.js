@@ -1,5 +1,5 @@
 import { selectAllCustomers, selectAllPolicies, selectCustomerWithPolicies } from './queries'
-import { errorHandlingResponse } from './errorhandler'
+import { errorHandlingResponse } from './errorHandler'
 
 'use strict'
 
