@@ -29,25 +29,33 @@ router.route('/customers')
 		}
 		else {
 			log.info('All Customers have been requested')
-		
-		}	
+
+		}
 	})
 
 router.route('/policies')
-	.get(function (req, res){
+	.get(function (req, res, err){
 		data.getPoliciesfromDB(res)
-		log.info('All Policies have been requested')
+		if(err) {
+			log.error(err.message)
+		}else {
+			log.info('All Policies have been requested')
+		}
 	})
 
 router.route('/customerswithpolicies')
-	.get(function (req, res){
+	.get(function (req, res, err){
 		data.getCustomerwithPoliciesfromDB(res)
-		log.info('All Customers with associated Polcies have been requested')
+		if(err) {
+			log.error(err.message)
+		}else {
+			log.info('All Customers with associated Polcies have been requested')
+		}
 	})
 
 app.use('/', router)
 
-app.use(function(err, req, res){
+app.use(function(err){
 	log.error('Error while Request', err.stack, err.message)
 	delete err.stack
 })

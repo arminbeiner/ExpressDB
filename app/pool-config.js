@@ -2,7 +2,7 @@
 
 let Pool = require('pg').Pool
 
-let pool = new Pool({
+let db_connection_config = new Pool({
 	user: 'postgres',
 	password: 'postgres',
 	host: 'localhost',
@@ -12,4 +12,4 @@ let pool = new Pool({
 	idleTimeoutMillis: 2000,
 })
 
-module.exports = pool
+module.exports = db_connection_config
