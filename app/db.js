@@ -1,7 +1,6 @@
 import {
     selectAllCustomers,
 	selectAllPolicies,
-	selectAllUsers,
 	selectCustomerWithPolicies,
     selectUserByName
 } from './queries'
@@ -16,9 +15,9 @@ const log = require('simple-node-logger').createSimpleFileLogger('./app/log/data
 export default class DB {
 
     getUserfromDB(params, response) {
-    	db_connection.query(selectUserByName, [params.name, params.pass], (err, result) => {
+        db_connection.query(selectUserByName, [params.name, params.pass], (err, result) => {
             errorHandlingResponse(response, result, err, log)
-		})
+        })
     }
 
 	getCustomersfromDB(response) {
@@ -38,5 +37,4 @@ export default class DB {
 			errorHandlingResponse(response, result, err, log)
 		})
 	}
-
 }
