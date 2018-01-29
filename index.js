@@ -20,8 +20,19 @@ router.use(function(req, res, next){
 	next()
 })
 
-router.route('/customers')
+router.route('/user/:name/:pass')
+	.get(function (req, res, err){
+		data.getUserfromDB(req.params, res)
+        if(err) {
+            log.error(err.message)
+        }
+        else {
+            log.info('User has been requested')
+		}
+    })
 
+
+router.route('/customers')
 	.get(function (req, res, err){
 		data.getCustomersfromDB(res)
 		if(err) {
@@ -29,7 +40,6 @@ router.route('/customers')
 		}
 		else {
 			log.info('All Customers have been requested')
-
 		}
 	})
 
@@ -49,7 +59,7 @@ router.route('/customerswithpolicies')
 		if(err) {
 			log.error(err.message)
 		}else {
-			log.info('All Customers with associated Polcies have been requested')
+			log.info('All Customers with associated Policies have been requested')
 		}
 	})
 
@@ -61,7 +71,7 @@ app.use(function(err){
 })
 
 app.listen(3000, function () {
-	console.log('Example app listening on port 3000!')
+	console.log('ExpressDB listening on port 3000!')
 })
 
 module.exports = app

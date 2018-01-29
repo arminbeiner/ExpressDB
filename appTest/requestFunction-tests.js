@@ -59,3 +59,19 @@ describe('/GET customerswithpolicies', () => {
 			})
 	})
 })
+
+describe('/GET user by name', () => {
+    it('it should GET one user by a name', (done) =>{
+        chai.request(server)
+            .get('/user/Tony/w1')
+            .end((err, res) => {
+                should.exist(res)
+                should.not.exist(err)
+                res.should.have.status(200)
+                res.body.should.be.a('array')
+                res.should.be.json
+                res.body.length.should.be.equal(1)
+                done()
+            })
+    })
+})
