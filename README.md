@@ -1,9 +1,9 @@
 # ExpressDB
-Express Server für DB Queries
-
 | Travis Status |
 | --- |
 [![Build Status](https://travis-ci.org/arminbeiner/ExpressDB.svg?branch=master)](https://travis-ci.org/arminbeiner/ExpressDB)
+
+Express Server für DB Queries
 
 ## Einleitung
 Express Server der Daten aus einer Postgresql Datenbank ausliest und diese als HTTP Response zurückgibt.  
