@@ -6,7 +6,7 @@
 Express Server für DB Queries
 
 ## Einleitung
-Express Server der Daten aus einer Postgresql Datenbank ausliest und diese als HTTP Response zurückgibt.  
+Express Server der Daten aus einer PostgreSQL Datenbank ausliest und diese als HTTP Response zurückgibt.  
 
 Als Grundlage für den Server wird Node.js mit der Express Library verwendet.  
 Für die Datenbankanbindung wird pg genutzt.  
