@@ -1,7 +1,7 @@
 # ExpressDB
 | Travis Status |
 | --- |
-[![Build Status](https://travis-ci.org/arminbeiner/ExpressDB.svg?branch=master)](https://travis-ci.org/arminbeiner/ExpressDB)
+[![Build Status](https://travis-ci.org/ibwgr/ExpressDB#.svg?branch=master)](https://travis-ci.org/ibwgr/ExpressDB#)
 
 Express Server für DB Queries
 
@@ -78,5 +78,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-Test
